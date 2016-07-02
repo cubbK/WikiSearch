@@ -3,22 +3,28 @@
   <script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script type="text/javascript" src = "logic.js"></script>
   <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>WikiSearch</title>
 </head>
 
 <body>
   <div class="container">
 
-      <img src="https://www.linkwheel.pro/wp-content/uploads/2015/02/wiki-links.png"
-       alt="" class="img-responsive center-block" id="logo">
-    
+    <img src="logoWiki.png"
+    alt="" class="img-responsive center-block" id="logo">
 
     <h3 class="text-center" id="title">SearchWiki</h3>
-    <div class="row" id="searchpanel">
-      <div class="col-sm-9" id="search-box">123</div>
-      <div class="col-sm-3" id="search=btn">456</div>
-    </div>
+
+    <div class="input-group input-group-lg">
+      <input id = "search-box" type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id = "search-btn">Search</button>
+      </span>
+    </div><!-- /input-group -->
+    <h5 class="text-center"><a href = "#" id = "random-article">Random article</a></h5>
+
+    <row class="results">
+      
+    </row>
   </div>
 </body>
-
-<button type="button" class = "btn" name="button" id = "random-article">Random Article</button>
