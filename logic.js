@@ -20,6 +20,11 @@ $(document).ready(function(){
 
     function wikipediaHTMLResult(data) {
       console.log(data);
+      if (data.query.search.length == 0 ){
+          console.log('nope');
+          $('#results').html('<h3 class = "text-center">Not Found.Try something else</h3>');
+          return false;
+      }
       var length = data.query.search.length;
       var searchArr = data.query.search;
       $('#results').html("");
