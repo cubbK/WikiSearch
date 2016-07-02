@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('h3').html("Hi jquery is working");
-  $.getJSON('http://en.wikipedia.org/w/api.php?action=query&format=json&callback=?',
+  $.getJSON('https://en.wikipedia.org/w/api.php?action=query&format=json&callback=?',
   {list:'search' , srsearch: 'paradox', prop:'links', uselang:'en'}, wikipediaHTMLResult);
 
   function wikipediaHTMLResult(data) {
@@ -9,7 +9,7 @@ $(document).ready(function(){
   }
   $('#random-article').click(redirectRandom);
   function redirectRandom() {
-    $.getJSON('http://en.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&format=json&callback=?',function (data) {
+    $.getJSON('https://en.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&format=json&callback=?',function (data) {
 
       var title = data.query.random[0].title;
       console.log(link);
