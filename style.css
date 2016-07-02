@@ -5,3 +5,11 @@
 .content {
   padding-left :10px;
 }
+footer {
+   position:absolute;
+   bottom:0;
+   width:auto;
+   height:30px;   /* Height of the footer */
+   background:#000;
+   text-align: center;
+}
